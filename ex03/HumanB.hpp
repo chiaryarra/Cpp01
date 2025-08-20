@@ -5,14 +5,15 @@
 #include <iostream>
 #include "Weapon.hpp"
 
-class HumanA
+class HumanB
 {
 private:
     std::string	name;
-	Weapon	weapon;	
+	Weapon	*weapon;	
 public:
-    HumanA(std::string name);
-    ~HumanA();
+    HumanB(std::string name);
+    ~HumanB();
+    void setWeapon(Weapon& weapon);
 	void attack();
 };
 
